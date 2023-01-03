@@ -1,0 +1,119 @@
+#header {
+    /* height: 384px;
+    width: 1375px; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* header-top-info css */
+.header-top-info{
+    padding-top: 0.5rem;
+}
+
+.header-contact-info{
+    display: flex;
+    color:white;
+}
+
+@media only screen and (max-width:1130px) {
+    .header-top-info {
+        /* overflow: hidden; */
+        font-size: 0.9rem !important;
+    }
+
+    .header-top-info li {
+        margin-right: 0.5rem;
+    }
+
+    .header-top-info li i {
+        padding-right: 0.3rem;
+
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    .header-top-info{
+        display: none;
+    }
+}
+
+/* nav bar css */
+
+.header-logo {
+    margin-top: -0.5rem;
+    width: 90%;
+    height: 80px;
+    object-fit: cover;
+
+}
+
+@media only screen and (max-width:1100px) {
+    .header-logo {
+        width: 90%;
+        height: 80px;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-content {
+    margin-right: 2.8rem;
+    margin-top: 1rem;
+    color: white !important;
+}
+
+@media only screen and (max-width:991px){
+    .nav-list{
+        text-align: left !important;
+    }
+}
+
+.nav-list-link {
+    color: white !important;
+
+}
+
+.nav-list {
+    padding-right: 3rem;
+
+}
+
+.nav-list-link {
+    display: inline-block;
+    position: relative;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: 500;
+}
+
+.nav-list-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white !important;
+    transform-origin: bottom right;
+    transition: transform 0.08s ease-out;
+}
+
+.nav-list-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: white !important;
+}
